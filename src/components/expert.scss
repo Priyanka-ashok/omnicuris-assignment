@@ -1,0 +1,151 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+.wrapper {
+  margin: 20px;
+}
+video {
+  border: 1px solid white;
+  padding: 3px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+header {
+  border: 1px solid lightgrey;
+  padding: 0 0 0 15px;
+  border-radius: 10px;
+  font-size: 20px;
+  width: 65%;
+  p {
+    margin: 0;
+    padding: 15px 0;
+    color: lightslategrey;
+  }
+  span {
+    color: cornflowerblue;
+  }
+}
+
+.container {
+  padding: 20px;
+}
+article {
+  float: left;
+  width: 65%;
+}
+
+aside {
+  float: left;
+  border: 1px solid lightgray;
+  padding: 15px;
+  border-radius: 25px;
+  height: 450px;
+  display: flex;
+  overflow-x: auto;
+  flex-direction: column;
+}
+
+#title {
+  position: relative;
+}
+
+#title::after {
+  display: block;
+  content: "";
+  width: 80px;
+  height: 3px;
+  background: #0288d1;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  top: 36px;
+  border-radius: 10px;
+}
+
+.description {
+  &__heading {
+    font-weight: 200;
+    font-size: 25px;
+  }
+  &__content {
+    line-height: 30px;
+    font-size: 20px;
+    color: lightslategrey;
+  }
+}
+.module {
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  padding: 12px;
+  width: 400px;
+  margin-top: 20px;
+  background-color: white;
+  &__profile_pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 11px 2px lightgrey;
+    margin-right: 20px;
+  }
+  &__info {
+    position: relative;
+    flex: 0 0 20em;
+    :first-child {
+      color: #d1007d;
+    }
+    :nth-of-type(2) {
+      color: #0288d1;
+    }
+    .duration {
+      position: absolute;
+      right: 20px;
+      padding-top: 10px;
+      color: grey;
+      font-weight: 600;
+    }
+  }
+}
+
+.experts {
+  clear: both;
+  h1 {
+    margin-left: 40px;
+  }
+}
+.expertsPanel {
+  display: flex;
+  margin: 40px 0 20px 70px;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+  }
+  &__qualification {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    :first-child {
+      color: #0288d1;
+      padding: 7px 0;
+    }
+    :nth-of-type(2) {
+      color: #d1007d;
+    }
+  }
+}
+.expert-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 11px 2px lightgrey;
+  border: 1px solid white;
+  padding: 2px;
+  background-color: white;
+}
